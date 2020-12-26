@@ -6,6 +6,7 @@
 //  Copyright © 2018 Ethan Pippin. All rights reserved.
 //
 
+#if !os(macOS)
 import UIKit
 
 public protocol NeededHeight: class {
@@ -159,3 +160,4 @@ open class BasicScrollView: UIScrollView {
     open func setupSubviews() { }
     open func setupLayoutConstraints() { }
 }
+#endif
